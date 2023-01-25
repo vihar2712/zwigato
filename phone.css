@@ -1,0 +1,42 @@
+/* navigation bar */
+#navbar {
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Home section */
+#home {
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Services section */
+
+#services {
+  flex-direction: column;
+}
+#services .box img {
+  height: 215px;
+}
+/* client section */
+
+#clients {
+  flex-wrap: wrap;
+}
+
+#clients img {
+  height: 185px;
+  width: 155px;
+  border-radius: 13px;
+}
+#client-section::before {
+  height: 439px;
+}
+/* contact section */
+#contact {
+  margin-top: 143px;
+}
+
+/* footer */

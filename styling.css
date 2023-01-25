@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --navbar-height: 159px;
+}
+
+
+/* Navigation bar */
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#navbar {
+  display: flex;
+  /* flex-direction:row; */
+  align-items: center;
+  position: relative;
+  top: 0px;
+  /* left: 0px; */
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+/* Navigation Bar: Logo */
+#logo img {
+  width: 100px;
+  height: 100px;
+  margin: 6px 9px;
+}
+
+#navbar::before {
+  content: "";
+  color: white;
+  /* display: flex; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Navigation Bar: List Styling */
+#navbar-item-container {
+  display: flex;
+  font-size: 27px;
+  /* margin:14px 0px; */
+  /* font-weight:500; */
+}
+
+.item {
+  list-style-type: none;
+}
+
+.item a {
+  color: white;
+  font-weight: bolder;
+  margin: 2px 9px;
+  display: block;
+  padding: 2px 23px;
+  border-radius: 45px;
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 300px;
+  height: 435px;
+  /* margin: 45px 200px; */
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+#home h1 {
+  color: rgb(231, 235, 123);
+  font-weight: bolder;
+  font-family: "Bree Serif", serif;
+  /* text-align: center; */
+}
+
+#home p {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home::before {
+  content: "";
+  color: white;
+  /* display: flex; */
+  position: absolute;
+  height: 622px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0.79;
+  z-index: -1;
+  background: url("images/salad-2068220.jpg") no-repeat center center/cover;
+}
+
+/* Utility classes */
+
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 12px 42px 0px 0px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.2rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: #73635d;
+  border-radius: 18px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: aliceblue;
+}
+
+.center {
+  text-align: center;
+}
+
+/* services section */
+
+#services {
+  margin: 30px;
+  margin-top: 10px;
+  display: flex;
+}
+
+#services .box {
+  border: 4px solid brown;
+  padding: 4px;
+  margin: 12px;
+  border-radius: 23px;
+  background-color: #fff4f4;
+}
+
+#services .box img {
+  height: 120px;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* Clients Section */
+
+#client-section {
+  position: relative;
+  height: 323px;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  /* top: 0px;
+  left: 0px; */
+  width: 100%;
+  height: 285px;
+  background: url("images/f5d1d01f-c308-4205-ac4a-0934765db2fe (1).jpg")
+    no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 32px;
+}
+#clients img {
+  height: 120px;
+  border-radius: 13px;
+}
+
+/* Contact details */
+
+#contact-box {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-left: 30px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 23px;
+}
+
+#contact-box form {
+  width: 30%;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+#contact {
+  position: relative;
+  height: 600px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  background: url("images/contact-1.jpg") no-repeat center center/cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 5px 12px;
+}
